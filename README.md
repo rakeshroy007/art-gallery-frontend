@@ -1,16 +1,64 @@
-# React + Vite
+# 🎨 ArtGallery Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend application for **ArtGallery (Creative Showcase)** — a responsive platform where artists can showcase their artwork and users can explore creative profiles.
 
-Currently, two official plugins are available:
+Built using **React (Vite), React Router, Tailwind CSS**, and modern UI libraries.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Responsive landing page with image mosaic layout
+- User authentication (Login / Signup)
+- Protected dashboard for image uploads
+- Public artist profile pages
+- Masonry layout for artwork display
+- Clean and modern UI
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- **Vite**
+- **React Router DOM**
+- **Tailwind CSS**
+- **lucide-react**
+- **react-hot-toast**
+
+---
+
+## 🔗 Routing Structure
+
+The application uses a clear, hierarchical routing system to manage navigation between public pages and protected user areas.
+
+| Route | Description | Access Level |
+| :--- | :--- | :--- |
+| `/` | **Landing Page** - Introduction to the platform | Public |
+| `/login` | **Login Page** - Existing user authentication | Public |
+| `/signup` | **Signup Page** - New user registration | Public |
+| `/dashboard` | **User Dashboard** - Private area to manage personal tasks | Private (Auth Required) |
+| `/profile/:username` | **Public Profile** - View public gallery of a specific user | Public |
+
+--- 
+
+## 🎨 UI Highlights
+ - Masonry layout for images
+ - Gradient background theme
+ - Responsive navbar and footer
+ - User-friendly forms
+
+---
+
+## ▶️ Running the Frontend Locally
+
+```bash
+npm install
+npm run dev
+```
+
+Frontend runs at:
+```
+http://localhost:5173
+```
+
+---
