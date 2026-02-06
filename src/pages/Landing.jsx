@@ -35,10 +35,17 @@ export default function Landing() {
 
     if (loading) {
         return (
-            <div className="min-h-screen flex items-center justify-center text-gray-400">
-                Loading artworks...
+            <div className="min-h-screen flex items-center justify-center">
+                <div className="text-center space-y-3">
+                    <div className="text-xl text-gray-300 font-medium">
+                        Loading artworks...
+                    </div>
+                    <p className="text-sm text-gray-500">
+                        Using free tier hosting, this may take a moment ☕
+                    </p>
+                </div>
             </div>
-        );
+    );
     }
 
     return (
